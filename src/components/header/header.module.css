@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  background-color: white;
 }
 
 .navbar {
@@ -38,22 +39,32 @@
 .mobile i {
   color: black;
   padding: 2rem;
+  transition: 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 790px) {
+  .nav {
+    background-color: black;
+    color: aliceblue;
+  }
   .navbar {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
     top: 80px;
-    right: -70vw;
-    width: 70vw;
+    right: -80vw;
+    width: 80vw;
     height: 100vh;
-    background-color: white;
+    background-color: black;
+    transition: 0.3s ease-in-out;
   }
   .navbar.active {
     right: 0px;
+  }
+
+  .navbar li {
+    color: aliceblue;
   }
 
   .mobile {
@@ -64,6 +75,7 @@
   .mobile i {
     font-size: 24px;
     cursor: pointer;
+    color: aliceblue;
   }
   .link {
     margin-bottom: 1.5rem;

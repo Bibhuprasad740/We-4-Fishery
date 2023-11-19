@@ -12,16 +12,13 @@ import Welcome from "./components/welcome/welcome";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  const scrollToComponent = (component) => {
-    window.scrollTo(component);
-  };
   return (
     <BrowserRouter>
       <div className={classes.app} id="home">
         <img className={classes.logo} src={logo} alt="" />
         <Header />
         <StartingBanner />
-        <ActionButtons onClick={scrollToComponent} />
+        <ActionButtons />
         <Welcome />
         <TypesOfFishing />
         <OurGallery />

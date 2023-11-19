@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato";
+  scroll-behavior: smooth;
 }
 
 .app {
@@ -20,11 +21,11 @@
   left: 1rem;
 }
 
-@media only screen and (max-width: 1160px) {
+@media only screen and (max-width: 790px) {
   .logo {
     height: 5rem;
     width: 3.5rem;
     left: 0.5rem;
-    top: 2rem;
+    top: 0.5rem;
   }
 }

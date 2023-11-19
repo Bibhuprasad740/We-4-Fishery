@@ -1,38 +1,18 @@
-import React, { useRef } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import classes from "./action-buttons.module.css";
 
 const ActionButtons = (props) => {
-  const classname1 = `${classes.button} ${classes.contact}`;
-  const classname2 = `${classes.button} ${classes.gallery}`;
-
-  const contactButtonRef = useRef();
-  const galleryButtonRef = useRef();
-
-  const contactButtonClickHandler = (event) => {
-    console.log("clicked!!");
-    props.onClick(contactButtonRef.current);
-  };
-
-  const galleryButtonClickHandler = (event) => {
-    props.onClick(galleryButtonRef.current);
-  };
+  const classname1 = `${classes.button} ${classes.contact} ${classes.link}`;
+  const classname2 = `${classes.button} ${classes.gallery} ${classes.link}`;
 
   return (
     <div className={classes["action-buttons"]}>
-      <button
-        ref={contactButtonRef}
-        onClick={contactButtonClickHandler}
-        className={classname1}
-      >
+      <Link to="#Contact" className={classname1}>
         Contact Now
-      </button>
-      <button
-        ref={galleryButtonRef}
-        onClick={galleryButtonClickHandler}
-        className={classname2}
-      >
-        Our Galleries
-      </button>
+      </Link>
+      <Link to="#FreshWaterFish" className={classname2}>
+        Our Gallery
+      </Link>
     </div>
   );
 };
