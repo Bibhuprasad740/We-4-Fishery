@@ -1,6 +1,7 @@
 .fishing-type {
   position: relative;
   margin: 0 2rem;
+  padding: 10px;
 }
 
 .fishing-type__img {
@@ -22,6 +23,7 @@
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
+  padding: 10px;
 }
 
 .description {
@@ -58,26 +60,7 @@
   .fishing-type {
     margin: 10px;
   }
-  .fishing-type__img {
-    width: 80%;
-    height: auto;
-  }
-  .overlay {
-    width: 80%;
-    height: 100%;
-  }
-  .footer {
-    border-bottom-left-radius: 5vw;
-    border-bottom-right-radius: 5vw;
-  }
-  .logo {
-    height: 2rem;
-    width: 2rem;
-  }
-  .logo-title {
-    font-size: 1rem;
-  }
   .description {
-    font-size: 1vw;
+    font-size: 20px;
   }
 }

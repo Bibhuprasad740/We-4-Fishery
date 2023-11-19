@@ -1,8 +1,17 @@
 .banner {
-  /* width: 100vw; */
+  width: 100vw;
 }
 
 .banner img {
   width: 100vw;
   height: auto;
+}
+
+@media only screen and (max-width: 1160px) {
+  .banner img {
+    /* height: 50vh;
+    width: 100vw; */
+    padding: 10px;
+    border-radius: 20px;
+  }
 }

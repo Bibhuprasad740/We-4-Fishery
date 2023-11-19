@@ -1,13 +1,8 @@
 import React from "react";
-import classes from "./gallery-item.module.css";
 
 const GalleryItem = (props) => {
-  const classname = `${classes["gallery-item"]} ${
-    props.className ? props.className : ""
-  }`;
-
   return (
-    <div className={classname["gallery-item"]}>
+    <div>
       <img src={props.src} alt="" />
     </div>
   );

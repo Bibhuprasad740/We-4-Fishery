@@ -22,7 +22,7 @@ const OurGallery = (props) => {
       </p>
       <div className={classes["image-section"]}>
         <GalleryItem src={galleryImage1} />
-        <GalleryItem className={classes["large-image"]} src={galleryImage2} />
+        <GalleryItem src={galleryImage2} />
         <GalleryItem src={galleryImage3} />
         <GalleryItem src={galleryImage4} />
         <GalleryItem src={galleryImage5} />
