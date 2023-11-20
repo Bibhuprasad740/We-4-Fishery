@@ -35,13 +35,15 @@
     align-items: center;
     padding: 0.5rem;
   }
-
+  .text h1 {
+    font-size: 1.5rem;
+  }
   .text p {
     width: 100%;
+    font-size: 1.2rem;
   }
-
   .welcome img {
-    height: 10rem;
-    width: 10rem;
+    height: 20rem;
+    width: 20rem;
   }
 }

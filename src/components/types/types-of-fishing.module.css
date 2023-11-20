@@ -24,15 +24,12 @@
   justify-content: space-evenly;
   margin: 4rem 0;
   position: relative;
-  overflow: hidden;
-  /* flex-wrap: wrap; */
 }
 
 @media only screen and (max-width: 1250px) {
   .types {
-    padding: 1rem;
+    padding: 0.5rem;
   }
-
   .image-section {
     display: block;
   }
