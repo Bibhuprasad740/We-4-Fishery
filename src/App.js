@@ -10,6 +10,7 @@ import StartingBanner from "./components/starting-banner/starting-banner";
 import TypesOfFishing from "./components/types/types-of-fishing";
 import Welcome from "./components/welcome/welcome";
 import { BrowserRouter } from "react-router-dom";
+import Divider from "./components/UI/divider";
 
 function App() {
   return (
